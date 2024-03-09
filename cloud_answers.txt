@@ -1,0 +1,38 @@
+
+
+1.Registration forms not there.(for User,Admin,Cloud server)
+Ans) here we are doing MTECH project based on secure searching algorithm so we have not concentrate on designing
+regsitration forms. In application there will be only one cloud and admin so no login/register require. Any user
+who are interested in searching can login to application by using username as 'user' and password as 'user' and then
+he can access application. Here we are not supposed to build login or regsitration but need to develop algorithm
+by creating AVL tree from dataset and then allow user to perform serach opration on that tree.
+
+
+2.Product  retrieval search not there.
+Ans) All IEEE papers will used some types of dataset to experiment with their paper technique and MTECH guides also
+ask to use dataset describe in paper instead of generating own data. As dataset describe in paper will consider suitable in
+achieving paper output. In ur paper also author has used ENRON EMAIL dataset which is collection of email documents and using this
+dataset he has generated AVL tree. Content of email document will be store in AVL tree branches and make it ready for search.
+Whenever user give query then it will search in AVL tree and give result. To perform search operation we need to have some data
+either it may be enron email data or product data. Here product data not available on internet so author used ENRON dataset
+and we also used same dataset. In this application user will upload enron document to cloud server and cloud server build AVL
+tree from that document and make AVL try available for search 
+
+3.Key Generation(How it works) Emails not registered.
+Ans) In this paper we are not generating key from email but its generating from file name which user is uploading. Here enron 
+dataset document name will be consider as key and its content will be consider as data for encryption. Below code is used to
+generate key from file name.
+
+String filename = upload_file;   //getting filename
+byte key[] = filename.getBytes(); //converting file to bytes
+String hash = Hash.getHash(identifier.getBytes(),key); //generating hashcode from file for verification
+b = AES.encrypt(file_content_data,key.getBytes()); //encrypting file data with given key
+
+4.Extension Concept not there,I want 2 Extension concepts so that I can select one from them.
+Ans) In ur extension you can add cache memory concept where user perform search data will be store in cache memory. Whenever
+user give same query then application obtained it from cache instead of researching from AVL tree. Searching again and again
+from AVL may consume lots of time so by maintaining cache memory u can reduce execution time and give response to user faster.
+
+second extension: In cloud whenever user upload file then it occupy some space and based on cloud space useage cloud server
+will charge and to reduce this storage space cose we can compress the file before storage so it take less space and less charge
+will be applied

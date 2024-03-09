@@ -1,0 +1,38 @@
+19ECS431-Embedded Systems
+19ECS431P-Embedded Systems lab
+19ECS451-Agile Software Development
+19ECS451P-Agile Software Development lab
+19ECS463-Software Testing Methodologies
+19ECS463P-Software Testing Methodologies lab
+19EEI471-Robotics and Automation
+19EHS403-Organizational Behavior
+19ECS491-Project Phase 1
+19ECS495-Comprehensive skill devolopment-6
+19ECS493-Internship
+
+
+
+
+Java Programming: Solving Problems with Software
+
+INTRODUCTION AND PROGRAMMING WITH IOT BOARDS
+Software Development Processes and Methodologies
+
+
+
+4TH SEMESTER
+OS-YES
+
+5th SEMESTER
+FLAT-NO
+DBMS-YES
+CNS-YES
+
+6TH SEMESTER
+CD-NO
+EEM-YES
+AI-YES
+DWDM-NO
+CC-YES
+EM-YES
+WAD-YES

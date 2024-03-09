@@ -1,0 +1,61 @@
+Q1)what are the types of techniques used for encryption and decryption?
+Ans)For encryption and decryption we are using CPABE algorithm. below steps are involved to encrypt and decrypt data using CPABE
+
+1)attributes = "user1,user2,user3" //list of users assign to attribute variables who have access permission
+  Cpabe att = new Cpabe(); //creating object of CPABE class
+  String public_key = file.getPath()+"/public.txt"; //file used to store public key
+  String master_key = file.getPath()+"/master.txt"; //files used to store master key
+  String private_key = file.getPath()+"/private.txt"; //file used to store private key
+  att.setup(public_key,master_key); //here cpabe oject initialize with public and master key file
+  att.keygen(public_key,private_key,master_key,attributes); //here cpabe object generate key based on given attributes. attributes
+  contains names of users who are having permission to access data
+
+  after generating keys then user call encrypt function to encrypt data by using keys and attributes data. Below code used to
+  achieve encryption
+
+  Cpabe att = new Cpabe();   //creating object of CPABE class
+  String public_key = input; //before encrypting giving name and location public key file
+  att.enc(public_key,policy,encfile,encdata); //now calling encryption function by using public key and policy file (this also
+  contains peoples id who have permission to access data), encfile is the plain file which will get encrypted and then 
+  store to encdata file
+
+  while decryption will used below code
+
+  Cpabe test = new Cpabe();//creating object of CPABE class
+  test.dec(public_key,private_key,enc,dec.getPath()); //calling dec function to decrypt data while calling this function
+  we will pass private key of person who is accessing data and enc is the encrypted data and dec.getPath() is the file location
+  to which encrypted data will be decrypted and save to dec.getPath()
+
+ so using above techniques we are encrypting and decrypting data
+
+Q2)showing front end no clarification on backend part
+Ans)in first answer i clearly mention about backend processing steps. 
+
+Q3)extensions algorithm what are the steps to achieve graph
+Ans) Actually to measure file size we will used functions like 'file.length()' and when normal file if we store then it will
+consume lots of space so to reduce that size we will compress data. while compressing application will use hashmap and store
+only unique data from the file and remove duplicate words or data. Whenever compression algorithm finds new word then it will 
+store that word in hashmap and if same word encounter then hashmap will store only location index of that word instead of saving
+that word again. so by removing duplicate words and by saving only their location index we can save storage space. While decompressing
+hashmap will recover all words based on their location and form a decompress file.
+
+so using above technique we are compressing the file. we will take file size before and after compression and then plot
+that file size in graph for comparison. In java JFREECHART is the free CHART API using this we can plot and display any type of
+graph.
+
+On internet u can search for simple JFREECHART java example then u will see lots of example on how to create and display graph 
+
+UML disgram explanation?
+
+
+
+
+
+old balance 1600
+student performnace python 3000
+
+
+
+
+
+
